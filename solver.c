@@ -20,7 +20,7 @@ bool is_valid_state(int board[9][9], int row, int col, int num) {
     }
 
     // now check for a 3X3 box
-    box_row = (row / 3) * 3; box_col = (col / 3) * 3;
+    int box_row = (row / 3) * 3; int box_col = (col / 3) * 3;
 
     for (int r = box_row; r < box_row + 3; r++) {
         for (int c = box_col; c < box_col + 3; c++) {
@@ -47,7 +47,7 @@ bool solve_sudoku(int board[9][9]) {
     return false; // let it backtrack 
 }
 
-void display_solved_sudoku(int board[9][9]) {
+void display_sudoku(int board[9][9]) {
     printf(" ------+-------+------ \n");
 
     for (int r = 0; r < 9; r++) {
