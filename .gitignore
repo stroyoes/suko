@@ -1,0 +1,12 @@
+# Build output
+suko
+*.o
+
+# Editor/LSP
+compile_commands.json
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
